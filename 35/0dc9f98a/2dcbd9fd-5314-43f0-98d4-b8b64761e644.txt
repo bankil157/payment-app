@@ -1,0 +1,27 @@
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/pages/Allocation.tsx
+  244:22  error  Parsing error: Expected corresponding JSX closing tag for 'div'
+
+✖ 1 problem (1 error, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.
+$ cd /workspace/shadcn-ui && pnpm run build
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1729 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.81 kB │ gzip:   0.44 kB
+dist/assets/index-Cqru4Q9k.css   61.19 kB │ gzip:  10.80 kB
+dist/assets/index-Dlf0GG_2.js   411.47 kB │ gzip: 124.49 kB
+✓ built in 5.12s

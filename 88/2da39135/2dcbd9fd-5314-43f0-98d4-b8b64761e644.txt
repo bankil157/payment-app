@@ -1,0 +1,127 @@
+$ cd /workspace/shadcn-ui && pnpm run lint && pnpm run build
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1732 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.81 kB │ gzip:   0.44 kB
+dist/assets/index-BF2jtupq.css   61.05 kB │ gzip:  10.76 kB
+dist/assets/index-BpFyIwZH.js   435.54 kB │ gzip: 128.75 kB
+✓ built in 8.89s
+$ cd /workspace/shadcn-ui && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1733 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.81 kB │ gzip:   0.44 kB
+dist/assets/index-C3WnAaAM.css   61.42 kB │ gzip:  10.82 kB
+dist/assets/index-B-TiQzLi.js   439.54 kB │ gzip: 129.62 kB
+✓ built in 6.99s
+$ cd /workspace/shadcn-ui && ls -la src/pages/
+
+total 751
+drwxr-xr-x 13 root root 143360 Aug 31 01:20 .
+drwxr-xr-x 82 root root 503808 Aug 31 01:20 ..
+-rw-r--r--  1 root root  15484 Aug 27 02:51 Allocation.tsx
+-rw-r--r--  1 root root   8128 Aug 27 02:28 Brokers.tsx
+-rw-r--r--  1 root root   9047 Aug 27 02:28 Buyers.tsx
+-rw-r--r--  1 root root   9246 Aug 27 02:25 Dashboard.tsx
+-rw-r--r--  1 root root    583 Jun 16 08:19 Index.tsx
+-rw-r--r--  1 root root  20533 Sep 10 08:42 Invoices.tsx
+-rw-r--r--  1 root root   3548 Aug 31 01:20 Login.tsx
+-rw-r--r--  1 root root    921 Jun 16 08:19 NotFound.tsx
+-rw-r--r--  1 root root  19760 Sep 10 08:45 Payments.tsx
+-rw-r--r--  1 root root  16145 Aug 27 02:29 Reports.tsx
+-rw-r--r--  1 root root  15020 Aug 31 01:26 Users.tsx
+$ cd /workspace/shadcn-ui && node -e "
+const { getUsers } = require('./dist/assets/index-B-TiQzLi.js');
+console.log('Checking users...');
+try {
+  // Clear localStorage first
+  if (typeof localStorage !== 'undefined') {
+    localStorage.clear();
+  }
+  console.log('localStorage cleared');
+} catch (e) {
+  console.log('localStorage not available in Node');
+}
+"
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module './dist/assets/index-B-TiQzLi.js'
+Require stack:
+- /workspace/shadcn-ui/[eval]
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at [eval]:2:22
+    at runScriptInThisContext (node:internal/vm:144:10)
+    at node:internal/process/execution:109:14
+    at [eval]-wrapper:6:24
+    at runScript (node:internal/process/execution:92:62)
+    at evalScript (node:internal/process/execution:123:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspace/shadcn-ui/[eval]' ]
+}
+
+Node.js v20.11.0
+$ cd /workspace/shadcn-ui && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1733 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.81 kB │ gzip:   0.44 kB
+dist/assets/index-C3WnAaAM.css   61.42 kB │ gzip:  10.82 kB
+dist/assets/index-jMCubQdg.js   439.84 kB │ gzip: 129.67 kB
+✓ built in 7.77s
+$ cd /workspace/shadcn-ui && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1733 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.81 kB │ gzip:   0.44 kB
+dist/assets/index-xDiKHUSY.css   61.53 kB │ gzip:  10.86 kB
+dist/assets/index-BfJAKqYZ.js   440.09 kB │ gzip: 129.77 kB
+✓ built in 7.27s

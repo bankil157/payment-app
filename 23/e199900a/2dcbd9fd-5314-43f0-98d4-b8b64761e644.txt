@@ -1,0 +1,15 @@
+$ cd /workspace/shadcn-ui
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/pages/Reports.tsx
+  76:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  91:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 2 problems (2 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.

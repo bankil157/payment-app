@@ -1,0 +1,12 @@
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/pages/Allocation.tsx
+  244:22  error  Parsing error: Expected corresponding JSX closing tag for 'div'
+
+✖ 1 problem (1 error, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.
