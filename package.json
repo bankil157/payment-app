@@ -3,12 +3,11 @@
   "type": "module",
   "packageManager": "pnpm@8.10.0",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint --quiet ./src",
-  "preview": "vite preview",
-  "start": "npx serve -s dist -l 10000"
-}
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint --quiet ./src",
+    "preview": "vite preview",
+    "start": "npx serve -s dist -l 10000"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
