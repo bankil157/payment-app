@@ -14,6 +14,8 @@ export default defineConfig(({ mode }) => ({
   preview: {
     host: true,
     port: 10000,
-    allowedHosts: ['.onrender.com']
+   allowedHosts: [
+  'payment-app-3-7nj7.onrender.com'
+]
   }
 }));
